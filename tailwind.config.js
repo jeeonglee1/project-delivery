@@ -4,17 +4,20 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    color: {
-      '--white': '#FFF',
-      '--black': '#1A1A1A',
-      '--red': '#EA1D2C',
-      '--gray-100': '#A6A6A6',
-      '--gray-200': '#717171',
-      '--gray-400': '#3E3E3E',
-      '--gray-h2': '#3F3E3E',
-      '--green': '#50A773',
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'branco': '#fff',
+      'vermelho': '#ea1d2c',
+      'preto': '#1a1a1a',
+      'cinza-100': '#a6a6a6',
+      'cinza-200': '#717171',
+      'cinza-400': '#3e3e3e',
+      'cinza-h2': '#3f3e3e',
+      'verde': '#50a773'
     },
 
     extend: {
