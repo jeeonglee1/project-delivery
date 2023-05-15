@@ -1,8 +1,16 @@
+import Header from "@/components/header";
+
 export default function Home() {
   return (
-   
-    <div className="text-vermelho">
-      Home 
+    
+
+    <div>
+      <Header/> 
+
+    <div>
+      
+    </div>
+
     </div>
        
   )

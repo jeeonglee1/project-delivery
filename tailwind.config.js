@@ -13,6 +13,7 @@ module.exports = {
       'branco': '#fff',
       'vermelho': '#ea1d2c',
       'preto': '#1a1a1a',
+      'gray-100': '#f7f7f7',
       'cinza-100': '#a6a6a6',
       'cinza-200': '#717171',
       'cinza-400': '#3e3e3e',
