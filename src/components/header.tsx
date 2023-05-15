@@ -44,9 +44,10 @@ export default function Header() {
 
         <div className="flex p-2 gap-6 mr-6 h-[44px]">
           <div className="flex items-center">avatar</div>
-          <button className="flex items-center">carrinho</button>
+          <button className="flex items-center">carrinhoo</button>
         </div>
       </div>
     </header>
   );
 }
+
