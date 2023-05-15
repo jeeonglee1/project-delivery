@@ -1,20 +1,19 @@
 import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
+import Avatar from "./ícones-header/avatar";
+import Cart from "./ícones-header/cart";
+import Search from "./ícones-header/search";
+
 
 export default function Header() {
   return (
-    <header
-      className={`
-            
-        `}
-    >
-      <div className="flex items-center w-full h-20 px-8 py-5 gap-10 fixed shadow  text-vermelho">
+    <header>
+      <div className="flex items-center w-full h-20 px-8 py-5 gap-10 shadow  text-vermelho">
        
-        <div className={`flex items-center w-[52px] h-10`}>
-          <a className="px-3 py-2 rounded-lg bg-vermelho text-branco" href="#">
+          <a className="flex justify-center items-center w-[60px] h-10 px-4 py-3 rounded-lg bg-vermelho text-branco" href="#">
             LOGO
           </a>
-        </div>
+       
 
         <nav className="flex justify-around items-center p-1 gap-6 text-vermelho ">
           <ul>
@@ -24,7 +23,7 @@ export default function Header() {
           </ul>
           <ul>
             <li>
-              <Link className="text-cinza-200" href="">Restaurantes</Link>
+              <Link className="text-cinza-200 hover:text-vermelho" href="">Restaurantes</Link>
             </li>
           </ul>
         </nav>
@@ -33,7 +32,7 @@ export default function Header() {
 
         <form className="flex items-center w-full h-[48px] shadow rounded-lg  bg-gray-100">
           <button className="flex items-center p-4  text-vermelho">
-            <FaSearch />
+            <Search />
           </button>
           <input
             className=" flex w-full pl-2 items-center  bg-gray-100 focus:outline-none text-preto"
@@ -42,9 +41,10 @@ export default function Header() {
           />
         </form>
 
-        <div className="flex p-2 gap-6 mr-6 h-[44px]">
-          <div className="flex items-center">avatar</div>
-          <button className="flex items-center">carrinhoo</button>
+        <div className="flex items-center justify-center pr-4 pl gap-6  w -[100px] h-[44px]">
+            <button className="flex justify-center items-center"><Avatar/></button>
+          <button className="flex justify-center items-center"><Cart/></button>
+         
         </div>
       </div>
     </header>
