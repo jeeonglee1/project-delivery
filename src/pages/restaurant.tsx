@@ -5,6 +5,7 @@ export default function Restaurant() {
     <div>
       <Header />
       Teste
+      Teste2
     </div>
   );
 }
