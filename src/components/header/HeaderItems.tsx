@@ -7,7 +7,7 @@ import Logo from "./Logo";
 export default function HeaderItems() {
   return (
     <header>
-      <div className="flex items-center w-full h-20 p-8 gap-6 shadow-lg fixed">
+      <div className="flex items-center w-full h-20 p-8 gap-6 shadow-sm fixed">
         <Logo />
 
         <nav className="flex justify-around items-center p-1 gap-8">

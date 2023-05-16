@@ -6,8 +6,8 @@ export default function Logo() {
       <Image 
       src="/../public/images/logo.png" 
       alt="logo" 
-      width="100"
-      height="100"
+      width="145"
+      height="120"
       />
     </div>
   )
