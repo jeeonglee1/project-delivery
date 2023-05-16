@@ -1,17 +1,11 @@
-import Header from "../components/header/Header";
+import Header from "@/components/Header/Header";
+import ListaPratos from "@/components/ListaPratos/ListaPratos";
 
 export default function Home() {
   return (
-    
-
     <div>
-      <Header/> 
-
-    <div>
-      
+     <Header />
+      <ListaPratos />
     </div>
-
-    </div>
-       
-  )
+  );
 }
