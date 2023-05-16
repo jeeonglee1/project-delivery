@@ -4,11 +4,7 @@ export default function Restaurant() {
     return (
         <div>
             <Header/>
-            
-            <div>
-                
-            </div>
-            
+            teste
         </div>
     )
 }
