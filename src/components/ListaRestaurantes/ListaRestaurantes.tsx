@@ -1,10 +1,17 @@
+import Bullguer from "./Bullguer";
+import DonaDeola from "./DonaDeola";
+import PizzaHut from "./PizzaHut";
+import Restaurantes from "./TextRestaurantes";
+
 export default function ListaRestaurantes() {
   return (
-    <div className="pl-[180px]">
-        <h2 className="font-bold text-2xl">Restaurantes</h2>
-        <div>
-          
-        </div>
+    <div>
+      <Restaurantes />
+      <div className="my-5 mx-[180px] flex flex-wrap gap-4 justify-between">
+      <Bullguer />
+      <PizzaHut />
+      <DonaDeola />
+      </div>
     </div>
-  );
+  )
 }
