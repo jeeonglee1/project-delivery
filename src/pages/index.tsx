@@ -1,6 +1,7 @@
 import Header from "@/components/Header/Header";
 import HomeImages from "@/components/HomeImages/HomeImages";
 import ListaPratos from "@/components/ListaPratos/ListaPratos";
+import ListaRestaurantes from "@/components/ListaRestaurantes/ListaRestaurantes";
 
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <HomeImages />
       <ListaPratos />
+      <ListaRestaurantes />
     </div>
   );
 }
