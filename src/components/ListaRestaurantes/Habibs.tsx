@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-export default function DonaDeola() {
+export default function PizzaHut() {
   return (
     <div className="flex cursor-pointer">
       <Image
-        src="/../public/images/donadeola.png"
-        alt="dona deola"
-        width={130}
+        src="/../public/images/habibs.avif"
+        alt="habibs"
+        width={140}
         height={100}
         className="rounded-2xl w-36 h-40"
       />
