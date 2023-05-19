@@ -13,6 +13,9 @@ module.exports = {
       'branco': '#fff',
       'vermelho': '#ea1d2c',
       'preto': '#1a1a1a',
+      'gray': '#f2f2f2',
+      'borda': "#f5f0eb",
+      'cinza': "#cbd5e0",
       'gray-100': '#f7f7f7',
       'cinza-100': '#a6a6a6',
       'cinza-200': '#717171',
@@ -20,6 +23,8 @@ module.exports = {
       'cinza-h2': '#3f3e3e',
       'verde': '#50a773'
     },
+
+    //#e2e8f0
 
     extend: {
       backgroundImage: {
