@@ -6,7 +6,6 @@ import InfoHeader from "@/components/Restaurante/InfoHeader";
 import Pratos from "@/components/Restaurante/Pratos";
 
 export default function Restaurant() {
-<<<<<<< HEAD
   return (
     <div>
       <div>
@@ -101,12 +100,4 @@ export default function Restaurant() {
       <div></div>
     </div>
   );
-=======
-    return (
-        <div>
-            <Header/>
-            teste
-        </div>
-    )
->>>>>>> e9f412b11993e1450166d6bec750121936224227
 }
