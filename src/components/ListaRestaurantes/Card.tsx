@@ -6,7 +6,7 @@ interface CardProps {
 
 export default function Card(props: CardProps) {
   return (
-    <div className="flex flex-col p-2">
+    <div className="flex flex-col p-2 h-28 w-56">
       <h4 className="font-semibold text-preto pt-4">
         {props.titleLocal}
       </h4>

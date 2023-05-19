@@ -28,7 +28,7 @@ export default function HeaderItems() {
         <div className="flex items-center w-full h-[48px] shadow rounded-lg bg-gray-100 p-4">
             <Search />
           <input 
-            className=" flex w-full pl-2 items-center  bg-gray-100 focus:outline-none text-preto"
+            className=" flex w-full pl-2 items-center bg-gray-100 focus:outline-none text-preto"
             placeholder="Busque por item ou loja"
             type="text">
             </input>

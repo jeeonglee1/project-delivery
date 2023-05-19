@@ -2,13 +2,13 @@ import Image from "next/image";
 import Card from "./Card";
 import Link from "next/link";
 
-export default function Habibs() {
+export default function ChinaInBox() {
   return (
     <Link href="">
       <div className="hover:-translate-y-0.5 transition p-2 flex items-center">
         <span>
           <Image
-            src="/../public/images/donadeola.png"
+            src="/../public/images/chinainbox.avif"
             alt="habibs"
             width={130}
             height={100}
@@ -16,11 +16,11 @@ export default function Habibs() {
             />
         </span>
         <div>
-        <Card 
-          titleLocal="Dona Deôla • Higienópolis" 
-          typeDistance="Coreana • 0.9km" 
-          minFreight="15 - 20 min • Grátis"
-          />
+          <Card 
+            titleLocal={"China in Box • Santana"} 
+            typeDistance={"Chinesa • 1.2km"} 
+            minFreight={"25 - 35 min • R$9,99"} 
+            />
         </div>
       </div>
     </Link>
