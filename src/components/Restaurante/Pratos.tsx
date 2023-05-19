@@ -4,11 +4,12 @@ interface IProps {
   title: string;
   content: string;
   price: string;
+  imageURL?: string;
 }
 
 
 export default function Pratos(props: IProps) {
-  const {title, content, price} = props;
+  const {title, content, price, imageURL} = props;
 
   return (
     <div className="flex justify-between w-100% "> 
@@ -31,10 +32,10 @@ export default function Pratos(props: IProps) {
         
         
         <div className="flex border-none">
-          
+          {imageURL}
           <Image
             className= "border-none shadow-none"
-            src=  "/../public/images-restaurant/bigtasty.png"
+            src= "/../public/images-restaurant/bigtasty.png"
             alt="bigtaste"
             width={180}
             height={174}

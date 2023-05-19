@@ -36,6 +36,7 @@ export default function Restaurant() {
             content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio
                 labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk..."
             price="26,90"
+           
             
           />
           <Pratos
