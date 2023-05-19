@@ -21,7 +21,8 @@ module.exports = {
       'cinza-200': '#717171',
       'cinza-400': '#3e3e3e',
       'cinza-h2': '#3f3e3e',
-      'verde': '#50a773'
+      'cinza-dark': '#1b1e23',
+      'verde': '#50a773',
     },
 
     //#e2e8f0
