@@ -1,19 +1,24 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
+import Modal from "./Modal";
+import { useState } from "react";
 
-interface IProps {
+export interface IPratos {
   title: string;
   content: string;
   price: string;
-  imageURL?: string;
+  imageURL: string;
 }
 
 
-export default function Pratos(props: IProps) {
+export default function Pratos(props: IPratos) {
   const {title, content, price, imageURL} = props;
+
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="flex justify-between w-100% "> 
-      <button className="flex p-4 h-52 w-[640px] gap-4 bg-branco border-solid border border-borda hover:border-cinza transition-0.2s shadow rounded ">
+      <button onClick={() => setOpen(!open)} className="flex p-4 h-52 w-[640px] gap-4 bg-branco border-solid border border-borda hover:border-cinza transition-0.2s shadow rounded ">
         
         <div className="flex-columm w-[411px] h-[154px]">
           <div className="flex-1 h-full">
@@ -32,18 +37,21 @@ export default function Pratos(props: IProps) {
         
         
         <div className="flex border-none">
-          {imageURL}
-          <Image
-            className= "border-none shadow-none"
-            src= "/../public/images-restaurant/bigtasty.png"
-            alt="bigtaste"
-            width={180}
-            height={174}
-            />
+          <img src={imageURL} alt="prato" className="w-[180px] h-[174px]"/>        
         </div>
       </button>
+
+      <Modal isOpen={open} setOpen={setOpen}/>
     </div>
   );
 }
 
 //mx-[76.6px]
+
+/*<Image
+className= "border-none shadow-none"
+src= "/../public/images-restaurant/bigtasty.png"
+alt="bigtaste"
+width={180}
+height={174}
+/> */

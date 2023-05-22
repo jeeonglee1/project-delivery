@@ -23,6 +23,7 @@ module.exports = {
       'cinza-h2': '#3f3e3e',
       'cinza-dark': '#1b1e23',
       'verde': '#50a773',
+      'modal': 'rgba(0, 0, 0, 0.5)'
     },
 
     //#e2e8f0
