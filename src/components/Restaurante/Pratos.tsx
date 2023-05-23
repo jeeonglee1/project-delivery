@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
 import Modal from "./Modal";
 import { useState } from "react";
 
@@ -45,13 +44,3 @@ export default function Pratos(props: IPratos) {
     </div>
   );
 }
-
-//mx-[76.6px]
-
-/*<Image
-className= "border-none shadow-none"
-src= "/../public/images-restaurant/bigtasty.png"
-alt="bigtaste"
-width={180}
-height={174}
-/> */
