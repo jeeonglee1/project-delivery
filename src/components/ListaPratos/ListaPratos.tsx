@@ -1,9 +1,9 @@
 import FreteGratis from "./TextFrete";
 import Salada from "./Salada";
-import SalmaoGrelhado from "./SalmaoGrelhado";
 import RisotoOriental from "./RisotoOriental";
 import Sanduiche from "./Sanduiche";
-import Espetinho from "./Espetinho";
+import BullguerLanche from "./BullguerLanche";
+import Esfiha from "./Esfiha";
 
 export default function ListaPratos() {
   return (
@@ -11,10 +11,10 @@ export default function ListaPratos() {
       <FreteGratis />
       <div className="py-5 flex w-ful gap-4">
         <Salada />
-        <SalmaoGrelhado />
+        <BullguerLanche />
         <RisotoOriental />
         <Sanduiche />
-        <Espetinho />
+        <Esfiha />
     </div>
     </div>
   );
