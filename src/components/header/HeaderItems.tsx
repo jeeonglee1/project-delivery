@@ -13,7 +13,7 @@ export default function HeaderItems() {
         <nav className="flex justify-around items-center p-1 gap-8">
           <ul>
             <li className="text-cinza-200 hover:text-vermelho">
-              <Link href="">Início</Link>
+              <Link href="/">Início</Link>
             </li>
           </ul>
           <ul>
