@@ -9,7 +9,7 @@ export default function Habibs() {
         <Card 
             titleLocal={"Habib's  • Bom Retiro"}
             typeDistance={"Esfiha • 0.4km"}
-            minFreight={"15 - 25 min • R$9,99"}
+            minFreight={"15 - 25 min • Grátis"}
             imageURL={"/../public/images/habibs.avif"}
         />
       </div>

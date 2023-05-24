@@ -4,7 +4,7 @@ import ChinaInBox from "./ChinaInBox";
 import DonaDeola from "./DonaDeola";
 import Habibs from "./Habibs";
 import McDonalds from "./McDonalds";
-import Dare from "./Daré";
+import Montana from "./Montana";
 
 
 export default function ListaRestaurantes() {
@@ -17,7 +17,7 @@ export default function ListaRestaurantes() {
         <DonaDeola />
         <Habibs />
         <McDonalds />
-        <Dare />
+        <Montana />
       </div>
     </div>
   )

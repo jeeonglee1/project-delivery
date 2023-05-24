@@ -10,13 +10,13 @@ export default function Card(props: CardProps) {
   const { titleLocal, typeDistance, minFreight, imageURL } = props;
 
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-3 hover:shadow-lg w-96 p-5 rounded-lg">
       <div className="flex">
         <Image
           src={imageURL}
           alt={""}
           width={120}
-          height={100}
+          height={120}
           className="rounded-xl max-w-md max-h-28"
         />
       </div>
