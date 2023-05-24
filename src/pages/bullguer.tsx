@@ -7,68 +7,68 @@ import Pratos, { IPratos } from "@/components/Restaurante/Pratos";
 
 const pratos: IPratos[]= [
   {
-    title: "McOferta Big Tasty",
+    title: "Bullguer",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"35,90",
-    imageURL:"/images-restaurant/mac/BigTasty.png",
+    imageURL:"/images-restaurant/bullguer/bullguer.png",
   },
   {
-    title:"McOferta Big Mac",
+    title:"Lumberjack",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"26,90",
-    imageURL:"/images-restaurant/mac/BigMac.png"
+    imageURL:"/images-restaurant/bullguer/Lumberjack.png"
   }, 
   {
-    title:"McOferta Quarteirão",
+    title:"Stencil",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odiolabore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"49,99",
-    imageURL:"/images-restaurant/mac/Quarterao.png",
+    imageURL:"/images-restaurant/bullguer/Stencil.png",
   },
   {
-    title:"McOferta McChicken",
+    title:"Chicken Hot Honey",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"49,99",
-    imageURL:"/images-restaurant/mac/McChicken.png",
+    imageURL:"/images-restaurant/bullguer/ChickenHotHoney.png",
   },
   {
-    title:"McOferta Cheddar McMelt",
+    title:"Standard",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odiolabore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"49,99",
-    imageURL:"/images-restaurant/mac/McMelt.png",
+    imageURL:"/images-restaurant/bullguer/Standard.png",
   },
   {
-    title:"McOferta McNífico",
+    title:"Bulldog",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"49,99",
-    imageURL:"/images-restaurant/mac/McNifico.png",
+    imageURL:"/images-restaurant/bullguer/Bulldog.png",
   },
   {
-    title:"McOferta Crispy Chicken",
+    title:"Crickles",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"49,99",
-    imageURL:"/images-restaurant/mac/CrispyChicken.png" ,
+    imageURL:"/images-restaurant/bullguer/Crinckles.png" ,
   },
   {
-    title:"McOferta Chicken McNuggets",
+    title:"Cheese Fries",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"49,99",
-    imageURL:"/images-restaurant/mac/Nuggets.png",
+    imageURL:"/images-restaurant/bullguer/CheeseFries.png",
   },
   {
-    title:"Mc Lanche Feliz",
+    title:"Maionese Bullguer",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"49,99",
-    imageURL:"/images-restaurant/mac/LancheFelizW.png",   
+    imageURL:"/images-restaurant/bullguer/Maionese.png",   
   },
   {
-    title:"Mcflurry",
+    title:"Molho de Queijo",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"49,99",
-    imageURL:"/images-restaurant/mac/Mcflurryi.png", 
+    imageURL:"/images-restaurant/bullguer/Queijo.png", 
   }
 ];
 
-export default function Mac() {
+export default function Bullguer() {
   return (
     <div>
       <div>
@@ -76,11 +76,11 @@ export default function Mac() {
       </div>
 
       <div>
-        <Banner
-          imageURL="images-restaurant/mac/bannerMc.png"
+        <Banner 
+            imageURL="images-restaurant/bullguer/zyro-image.png"
         />
         <InfoHeader  
-          imageURL="images/mc.png" title="Mcdonald's - Av. Paulista" time="35 min" delivery="R$ 4,99" 
+         imageURL="images/bullguer.png" title="Bullguer - Santana" time="20 - 30 min" delivery="Grátis" 
         />
         <SearchFood />
       </div>

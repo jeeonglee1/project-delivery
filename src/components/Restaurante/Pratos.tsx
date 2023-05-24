@@ -35,8 +35,8 @@ export default function Pratos(props: IPratos) {
         </div>
         
         
-        <div className="flex border-none">
-          <img src={imageURL} alt="prato" className="w-[180px] h-[174px]"/>        
+        <div className="flex justify-center items-center border-none ">
+          <img  src={imageURL} alt="prato" className="flex justify-center items-end w-[180px] h-[174px]"/>        
         </div>
       </button>
 
