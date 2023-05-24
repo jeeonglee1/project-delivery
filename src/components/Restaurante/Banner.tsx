@@ -1,21 +1,16 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image"
 
 interface IProps {
-    image?: "" 
+    imageURL: string; 
   }
 
 export default function Banner(props: IProps) {
-    const {image} = props;
+    const {imageURL} = props;
     return (
         <div className=" pt-20">
             <div className="flex justify-center w-full h-[285px] py-9 pb-0 bg-branco">
-                <Image
-                    className="flex justify-center items-center mb-0 rounded-md"
-                    src="/../public/images-restaurant/bannerMc.png"
-                    alt="banner-mc"
-                    width={1310}
-                    height={250}
-                />
+                <img src={imageURL} alt="" className="flex justify-center items-center w-[1310px] h-[250px] mb-0 rounded-md"/>
             </div>
         </div>
     )
