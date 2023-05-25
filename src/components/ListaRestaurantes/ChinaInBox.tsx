@@ -9,7 +9,7 @@ export default function ChinaInBox() {
           <Card 
             titleLocal={"China in Box • Santana"}
             typeDistance={"Chinesa • 1.2km"}
-            minFreight={"25 - 35 min • R$9,99"} 
+            minFreight={"25 - 35 min • Grátis"} 
             imageURL={"/../public/images/chinainbox.avif"}            
           />
         </div>
