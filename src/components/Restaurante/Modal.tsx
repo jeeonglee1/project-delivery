@@ -17,8 +17,8 @@ export default function Modal({ isOpen, setOpen, currentDish }: IModal) {
       <div className="fixed inset-0 flex justify-center items-center shadow z-50 bg-modal">
         <div className=" fixed flex-columm justify-center w-[1200px] h-[580px] bg-branco  rounded">
           <div className="flex justify-center h-full ">
-            <div className="flex justify-center items-center h-full w-1/2">
-                <img src={currentDish.imageURL} className=" flex items-center p-2 w-[580px] h-[580px]"/>
+            <div className="flex justify-center items-center h-full w-1/2 -4">
+                <img src={currentDish.imageURL} className=" flex items-center p-2 w-[516px] h-[516px]"/>
             </div>
 
             <div className="flex-columm justify-center items-center w-1/2 h-100% space-y-4">
@@ -66,7 +66,7 @@ export default function Modal({ isOpen, setOpen, currentDish }: IModal) {
                 <div className="flex ">
                   <button className=" flex justify-between items-center bg-vermelho px-5 h-12 w-60 text-branco font-medium rounded-md">
                     Adicionar
-                    <span>R$ <span>35,00</span></span>
+                    <span>R$ <span>{currentDish.price}</span></span>
                   </button>
                 </div>
               </footer>

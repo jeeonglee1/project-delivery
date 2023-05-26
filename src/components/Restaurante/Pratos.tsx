@@ -1,14 +1,15 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import { useState } from "react";
 
  export interface IPratos {
+   key: number;
    title: string;
    content: string;
    price: string;
    imageURL: string;
-   prato: string;
-   setCurrentDish: any;
-   setOpen: (isOpen: boolean) => void;
+   prato?: any;
+   setCurrentDish?: any;
+   setOpen?: any;
 }
 
 
@@ -20,8 +21,8 @@ export default function Pratos(props: IPratos) {
       <button 
         className="flex p-4 h-52 w-[640px] gap-4 bg-branco border-solid border border-borda hover:border-cinza transition-0.2s shadow rounded "
         onClick={() => {
-          props.setCurrentDish(prato);
-          props.setOpen(!open);
+          setCurrentDish(prato);
+          setOpen(!open);
         }}
       >
         <div className="flex-columm w-[411px] h-[154px]">
@@ -40,12 +41,18 @@ export default function Pratos(props: IPratos) {
         </div>
         
         
-        <div className="flex justify-center items-center border-none ">
-          <img  src={imageURL} alt="prato" className="flex justify-center items-end w-[180px] h-[174px]"/>        
+        <div className="flex justify-center items-center h-[174px] w-[180px] ">
+        <Image
+          className="flex justify-center items-center"
+          src={imageURL}
+          alt={""}
+          width={180}
+          height={174}
+        />
         </div>
       </button>
-
-      
     </div>
   );
 }
+
+//<img  src={imageURL} alt="prato" className="flex justify-center items-end w-[180px] h-[174px]"/> 

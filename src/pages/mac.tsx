@@ -7,73 +7,73 @@ import Pratos, { IPratos } from "@/components/Restaurante/Pratos";
 import { useState } from "react";
 import Modal from "../components/Restaurante/Modal";
 
-// const pratos: IPratos[]= [
-const pratos = [
+const pratos: IPratos[]= [
+
   {
-    id: 1,
+    key: 1,
     title: "McOferta Big Tasty",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"35,90",
     imageURL:"/images-restaurant/mac/BigTasty.png",
   },
   {
-    id: 2,
+    key: 2,
     title:"McOferta Big Mac",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"26,90",
     imageURL:"/images-restaurant/mac/BigMac.png"
   }, 
   {
-    id: 3,
+    key: 3,
     title:"McOferta Quarteirão",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odiolabore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"49,99",
     imageURL:"/images-restaurant/mac/Quarterao.png",
   },
   {
-    id: 4,
+    key: 4,
     title:"McOferta McChicken",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"49,99",
     imageURL:"/images-restaurant/mac/McChicken.png",
   },
   {
-    id: 5,
+    key: 5,
     title:"McOferta Cheddar McMelt",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odiolabore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"49,99",
     imageURL:"/images-restaurant/mac/McMelt.png",
   },
   {
-    id: 6,
+    key: 6,
     title:"McOferta McNífico",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"49,99",
     imageURL:"/images-restaurant/mac/McNifico.png",
   },
   {
-    id: 7,
+    key: 7,
     title:"McOferta Crispy Chicken",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"49,99",
     imageURL:"/images-restaurant/mac/CrispyChicken.png" ,
   },
   {
-    id: 8,
+    key: 8,
     title:"McOferta Chicken McNuggets",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"49,99",
     imageURL:"/images-restaurant/mac/Nuggets.png",
   },
   {
-    id: 9,
+    key: 9,
     title:"Mc Lanche Feliz",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"49,99",
     imageURL:"/images-restaurant/mac/LancheFelizW.png",   
   },
   {
-    id: 10,
+    key: 10,
     title:"Mcflurry",
     content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
     price:"49,99",
@@ -109,7 +109,7 @@ export default function Mac() {
             pratos.length > 0 
             ? pratos.map((prato) => (
               <Pratos
-                key={prato.id}
+                key={prato.key}
                 prato={prato}
                 title={prato.title}
                 content={prato.content}
