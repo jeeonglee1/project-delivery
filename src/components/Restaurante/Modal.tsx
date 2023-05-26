@@ -4,38 +4,39 @@ import Contador from "./Contador";
 import X from "./X";
 
 interface IModal {
-  isOpen: boolean;
-  setOpen: (isOpen: boolean) => void;
-}
+   isOpen: boolean;
+   setOpen: (isOpen: boolean) => void;
+   currentDish: any;
+ }
 
-export default function Modal({ isOpen, setOpen }: IModal) {
+export default function Modal({ isOpen, setOpen, currentDish }: IModal) {
+  console.log(currentDish);
+
   if (isOpen) {
     return (
       <div className="fixed inset-0 flex justify-center items-center shadow z-50 bg-modal">
         <div className=" fixed flex-columm justify-center w-[1200px] h-[580px] bg-branco  rounded">
           <div className="flex justify-center h-full ">
             <div className="flex justify-center items-center h-full w-1/2">
-                <img src='/images-restaurant/mac/BigTasty.png' className=" flex items-center p-2 w-[580px] h-[580px]"/>
+                <img src={currentDish.imageURL} className=" flex items-center p-2 w-[580px] h-[580px]"/>
             </div>
 
             <div className="flex-columm justify-center items-center w-1/2 h-100% space-y-4">
               <div className="flex justify-center items-end w-full h-36 ">
                 <h2 className="flex justify-center items-center w-full h-4 font-medium text-xl text-cinza-h2">
-                  McOferta BigTasty
+                  {currentDish.title}
                 </h2>
               </div>
 
               <div className="flex-columm justify-center">
                 <div className="flex justify-center items-center w-full pt-2.5 px-10">
                   <p className="flex justify-center items-center w-full h-auto font-light text-cinza-200 text-justify">
-                    Lorem ipsum sit amet consectetur adipisicing elit. Quo sus
-                    asperiores odio ipsipsam laudantium, aperiam perferendis
-                    modi magni! Accusantium animi!
+                    {currentDish.content}
                   </p>
                 </div>
                 <div className="flex justify-center items-center w-full px-10 my-3">
                   <p className="flex justify-start items-center w-full h-auto text-cinza-h2 text-xs font-medium">
-                    <span>R$ 35,00</span>
+                    <span>{currentDish.price}</span>
                   </p>
                 </div>
               </div>
@@ -65,7 +66,7 @@ export default function Modal({ isOpen, setOpen }: IModal) {
                 <div className="flex ">
                   <button className=" flex justify-between items-center bg-vermelho px-5 h-12 w-60 text-branco font-medium rounded-md">
                     Adicionar
-                    <span>R$35,00</span>
+                    <span>R$ <span>35,00</span></span>
                   </button>
                 </div>
               </footer>

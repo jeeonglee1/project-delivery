@@ -1,11 +1,17 @@
 import Link from "next/link";
 import Avatar from "./Header-icons/Avatar";
-import Cart from "./Header-icons/Cart";
 import Search from "./Header-icons/Search";
 import Logo from "./Logo";
+import CartLogo from "./Header-icons/CartLogo";
+import { useState } from "react";
+import Bag from "../Bag";
 
 export default function HeaderItems() {
+
+  const [open, setOpen] = useState(false)
+
   return (
+    <div>
     <header>
       <div className="flex items-center w-full h-20 p-8 gap-6 shadow-sm fixed">
         <Link href={"/"}>
@@ -40,11 +46,15 @@ export default function HeaderItems() {
           <button className="flex justify-center items-center">
             <Avatar />
           </button>
-          <button className="flex justify-center items-center">
-            <Cart />
+          <button onClick={() => setOpen(!open)} className="flex justify-center items-center">
+            <CartLogo />
           </button>
+
         </div>
       </div>
     </header>
+    <Bag bagOpen={open} setBagOpen={setOpen}/>
+    </div>
+
   );
 }

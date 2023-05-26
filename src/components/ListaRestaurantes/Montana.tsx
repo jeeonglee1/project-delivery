@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Montana() {
   return (
-    <Link href={""}>
+    <Link href={"/montana"}>
       <div className="hover:-translate-y-0.5 transition flex items-center">
         <div>
         <Card 

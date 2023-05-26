@@ -7,106 +7,105 @@ import Pratos, { IPratos } from "@/components/Restaurante/Pratos";
 
 const pratos: IPratos[]= [
     {
-      title: "Pão Delícia",
+      title: "Top Side, corte de cozão mole com arroz + 01 acompanhamento extra",
       content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
       price:"35,90",
-      imageURL:"/images-restaurant/donadeola/PaoDelicia.png",
+      imageURL:"/images-restaurant/montana/TopSide.png",
     },
     {
-      title:"Mini pão de queijo (10 unidades)",
+      title:"Top side, corte de coxão mole com massa fettuccine + 01 molho",
       content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
       price:"26,90",
-      imageURL:"/images-restaurant/donadeola/PaoDeQueijo.png"
+      imageURL:"/images-restaurant/montana/TopSideM.png"
     }, 
     {
-      title:"Pão Francês na chapa",
+      title:"Executivo de iscas de frango com arroz, feijão e + 01 extra de sua esolha",
       content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
       price:"49,99",
-      imageURL:"/images-restaurant/donadeola/PaoFrances.png",
+      imageURL:"/images-restaurant/montana/ExecutivoFrango.png",
     },
     {
-      title:"Empada de frango",
+      title:"Executivo de tiras de Alcatra, com arroz, feijão e + 01 extra a sua escolha",
       content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odiolabore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
       price:"49,99",
-      imageURL:"/images-restaurant/donadeola/EmpadaDeFrango.png",
+      imageURL:"/images-restaurant/montana/ExecutivoAlcatra.png",
     },
     {
-        title:"Pão Francês (5 unidades)",
+        title:"Corte de Contra Filé + 03 acompanhamentos",
         content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odiolabore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
         price:"49,99",
-        imageURL:"/images-restaurant/donadeola/PaoFrances5.png",
+        imageURL:"/images-restaurant/montana/ContraFile.png",
       },
     {
-      title:"Mini Pão Delícia (5 unidades)",
+      title:"Parmegiana de Frango + 03 acompanhamentos extras",
       content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
       price:"49,99",
-      imageURL:"/images-restaurant/donadeola/MiniPao.png",
+      imageURL:"/images-restaurant/montana/Parmegiana.png",
     },
     {
-      title:"Copan",
+      title:"Montan Steak Angus (200g), corte angus + 03 acompanhamentos extras",
       content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
       price:"49,99",
-      imageURL:"/images-restaurant/donadeola/Copan.png" ,
+      imageURL:"/images-restaurant/montana/Angus.png" ,
     },
     {
-      title:"Pinacoteca",
+      title:"Filé de Frango Grelhado + 03 acompanhamentos extras",
       content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
       price:"49,99",
-      imageURL:"/images-restaurant/donadeola/Pinacoteca.png",
+      imageURL:"/images-restaurant/montana/FileFrango.png",
     },
     {
-      title:"Mini Pudim de Doce de Leite",
+      title:"Salada",
       content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
       price:"49,99",
-      imageURL:"/images-restaurant/donadeola/MiniPudim.png",   
+      imageURL:"/images-restaurant/montana/Salada.png",   
     },
     {
-      title:"Café Expresso",
+      title:"Strogonoff de frando com arroz e fritas montana",
       content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
       price:"49,99",
-      imageURL:"/images-restaurant/donadeola/CafeExpresso.png", 
+      imageURL:"/images-restaurant/montana/Strog.png", 
     }
   ];
 
-
-export default function Deola() {
-    return (
+export default function Montana() {
+    return(
         <div>
-          <div>
-            <Header />
-          </div>
-    
-          <div>
-            <Banner
-              imageURL="images-restaurant/donadeola/BannerDeola.png"
-            />
-            <InfoHeader  
-              imageURL="images-restaurant/donadeola/DonaDeola.png" title="Dona Deôla - Higienopolis" time="35 min" delivery="R$ 4,99" 
-            />
-            <SearchFood />
-          </div>
-    
-          <div>
-            <Cardapio />
-    
-            <div className="flex flex-wrap  justify-center gap-6 mb-10">
-              {
-                pratos.length > 0 
-                ? pratos.map((prato, index) => (
-                  <Pratos
-                    key={index}
-                    title={prato.title}
-                    content={prato.content}
-                    price={prato.price}
-                    imageURL={prato.imageURL}
-                  />
-                ))
-                : <p>Não há pratos!</p>
-              }
-            </div>
-          </div>
-    
-          <div></div>
+      <div>
+        <Header />
+      </div>
+
+      <div>
+        <Banner
+          imageURL="images-restaurant/montana/BannerMontana.png"
+        />
+        <InfoHeader  
+          imageURL="images/montanagrill.jpg" title="Montana - Shopping D " time="35 min" delivery="R$ 4,99" 
+        />
+        <SearchFood />
+      </div>
+
+      <div>
+        <Cardapio />
+
+        <div className="flex flex-wrap  justify-center gap-6 mb-10">
+          {
+            pratos.length > 0 
+            ? pratos.map((prato, index) => (
+              <Pratos
+                key={index}
+                title={prato.title}
+                content={prato.content}
+                price={prato.price}
+                imageURL={prato.imageURL}
+              />
+            ))
+            : <p>Não há pratos!</p>
+          }
         </div>
-      );
+      </div>
+
+      <div></div>
+    </div>
+    )
 }

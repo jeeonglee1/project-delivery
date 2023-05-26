@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ChinaInBox() {
   return (
-    <Link href={""}>
+    <Link href={"/chinainbox"}>
       <div className="hover:-translate-y-0.5 transition flex items-center">
         <div>
           <Card 
