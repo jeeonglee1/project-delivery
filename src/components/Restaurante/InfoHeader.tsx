@@ -19,9 +19,7 @@ export default function InfoHeader(props: IProps){
                
                 <div className="flex-columm w-[927px] ">
                     <h1 className="font-semibold text-4xl text-cinza-400">{title}</h1>
-                    <h2 className=" flex items-center gap-2 font-medium text-cinza-400">
-
-                    </h2>
+                    <h2 className=" flex items-center gap-2 font-medium text-cinza-400">     </h2>
                     
                 </div>
                 <div className="flex-columm flex-auto justify-end items-end gap-2 text-sm font-medium text-cinza-200"> 

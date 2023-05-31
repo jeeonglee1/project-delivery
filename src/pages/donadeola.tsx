@@ -105,8 +105,8 @@ export default function Deola() {
         <InfoHeader
           imageURL="images-restaurant/donadeola/DonaDeola.png"
           title="Dona Deôla - Higienopolis"
-          time="35 min"
-          delivery="R$ 4,99"
+          time="15 - 20 min"
+          delivery="Grátis"
         />
         <SearchFood />
       </div>

@@ -14,7 +14,7 @@ export default function Contador() {
 
   return (
     <div className="flex justify-center items-center w-28 h-12 gap-2 border-solid border-2 border-gray rounded-md">
-      <button disabled={count < 1} onClick={decCount} >
+      <button disabled={count < 2} onClick={decCount} >
         <svg
           className="my-1"
           xmlns="http://www.w3.org/2000/svg"

@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
+import Botao from "./Botao";
 import Contador from "./Contador";
 import X from "./X";
 
@@ -8,6 +9,15 @@ interface IModal {
    setOpen: (isOpen: boolean) => void;
    currentDish: any;
  }
+
+const handleChangePrince = () => {
+
+}
+
+
+const handleAddToCart = () => { 
+
+}
 
 export default function Modal({ isOpen, setOpen, currentDish }: IModal) {
   console.log(currentDish);
@@ -23,7 +33,7 @@ export default function Modal({ isOpen, setOpen, currentDish }: IModal) {
 
             <div className="flex-columm justify-center items-center w-1/2 h-100% space-y-4">
               <div className="flex justify-center items-end w-full h-36 ">
-                <h2 className="flex justify-center items-center w-full h-4 font-medium text-xl text-cinza-h2">
+                <h2 className="flex justify-center items-center w-full h-4 px-10 text-justify font-medium text-xl text-cinza-h2">
                   {currentDish.title}
                 </h2>
               </div>
@@ -60,15 +70,8 @@ export default function Modal({ isOpen, setOpen, currentDish }: IModal) {
                 </div>
               
                 <footer className=" absolute bottom-2 right-2 flex items-center h-20 p-5 pr-0 gap-6 mr-8 border-solid border-t-2 border-gray">
-
                     <Contador/>
-
-                <div className="flex ">
-                  <button className=" flex justify-between items-center bg-vermelho px-5 h-12 w-60 text-branco font-medium rounded-md">
-                    Adicionar
-                    <span>R$ <span>{currentDish.price}</span></span>
-                  </button>
-                </div>
+                    <Botao priceModal = {currentDish.price} />
               </footer>
             </div>
           </div>

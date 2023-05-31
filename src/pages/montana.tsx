@@ -96,7 +96,7 @@ export default function Montana() {
           imageURL="images-restaurant/montana/BannerMontana.png"
         />
         <InfoHeader  
-          imageURL="images/montanagrill.jpg" title="Montana - Shopping D " time="35 min" delivery="R$ 4,99" 
+          imageURL="images/montanagrill.jpg" title="Montana - Shopping D " time="20 - 30 min" delivery="Grátis" 
         />
         <SearchFood />
       </div>

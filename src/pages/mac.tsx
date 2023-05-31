@@ -96,7 +96,7 @@ export default function Mac() {
           imageURL="images-restaurant/mac/bannerMc.png"
         />
         <InfoHeader  
-          imageURL="images/mc.png" title="Mcdonald's - Av. Paulista" time="35 min" delivery="R$ 4,99" 
+          imageURL="images/mc.png" title="Mcdonald's - Av. Paulista" time="30 -40 min" delivery="R$ 10,99" 
         />
         <SearchFood />
       </div>
