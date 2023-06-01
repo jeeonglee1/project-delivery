@@ -3,7 +3,7 @@ import Banner from "@/components/Restaurante/Banner";
 import SearchFood from "@/components/Restaurante/Busca";
 import Cardapio from "@/components/Restaurante/Cardapio";
 import InfoHeader from "@/components/Restaurante/InfoHeader";
-import Modal from "@/components/Restaurante/Modal";
+import Modal from "@/components/Restaurante/ModalRestaurante";
 import Pratos, { IPratos } from "@/components/Restaurante/Pratos";
 import { useState } from "react";
 

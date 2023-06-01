@@ -5,7 +5,7 @@ import Cardapio from "@/components/Restaurante/Cardapio";
 import InfoHeader from "@/components/Restaurante/InfoHeader";
 import Pratos, { IPratos } from "@/components/Restaurante/Pratos";
 import { useState } from "react";
-import Modal from "../components/Restaurante/Modal";
+import Modal from "../components/Restaurante/ModalRestaurante";
 
 const pratos: IPratos[]= [
 
