@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Botao from "./Botao";
 import Contador from "./Contador";
 import X from "./X";
@@ -12,16 +12,24 @@ interface IModal {
    currentRestaurant: any;
  }
 
-
-
 const handleAddToCart = () => { 
 
 }
 
-export default function Modal({ isOpen, setOpen, currentDish, currentRestaurant }: IModal) {
-  console.log(currentDish);
+export default function ModalRestaurante({ isOpen, setOpen, currentDish, currentRestaurant }: IModal) {
+  const [modalPrice, setModalPrice] = useState(currentDish.price);
+  const [quantity, setQuantity] = useState<number>(1);
+  
+  useEffect(
+    () => {
+      setModalPrice(currentDish.price);
+    }, 
+    [currentDish.price]
+  );
 
-  const [modalPrice, setModalPrice] = useState();
+  const handleChangePrice = () => {
+    setModalPrice((modalPrice * quantity).toFixed(2));
+  };
 
   if (isOpen) {
     return (
@@ -71,8 +79,8 @@ export default function Modal({ isOpen, setOpen, currentDish, currentRestaurant 
                 </div>
               
                 <footer className=" absolute bottom-2 right-2 flex items-center h-20 p-5 pr-0 gap-6 mr-8 border-solid border-t-2 border-gray">
-                    <Contador/>
-                    <Botao priceModal = {currentDish.price} />
+                  <Contador handleChangePrice={handleChangePrice} quantity={quantity} setQuantity={setQuantity} />
+                  <Botao priceModal={modalPrice}/>
               </footer>
             </div>
           </div>

@@ -7,81 +7,97 @@ import Pratos, { IPratos } from "@/components/Restaurante/Pratos";
 import { useState } from "react";
 import Modal from "../components/Restaurante/ModalRestaurante";
 
-const pratos: IPratos[]= [
+export const getServerSideProps = async () => {
+  const pratos: IPratos[]= [
 
-  {
-    key: 1,
-    title: "McOferta Big Tasty",
-    content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
-    price:"35,90",
-    imageURL:"/images-restaurant/mac/BigTasty.png",
-  },
-  {
-    key: 2,
-    title:"McOferta Big Mac",
-    content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
-    price:"26,90",
-    imageURL:"/images-restaurant/mac/BigMac.png"
-  }, 
-  {
-    key: 3,
-    title:"McOferta Quarteirão",
-    content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odiolabore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
-    price:"49,99",
-    imageURL:"/images-restaurant/mac/Quarterao.png",
-  },
-  {
-    key: 4,
-    title:"McOferta McChicken",
-    content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
-    price:"49,99",
-    imageURL:"/images-restaurant/mac/McChicken.png",
-  },
-  {
-    key: 5,
-    title:"McOferta Cheddar McMelt",
-    content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odiolabore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
-    price:"49,99",
-    imageURL:"/images-restaurant/mac/McMelt.png",
-  },
-  {
-    key: 6,
-    title:"McOferta McNífico",
-    content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
-    price:"49,99",
-    imageURL:"/images-restaurant/mac/McNifico.png",
-  },
-  {
-    key: 7,
-    title:"McOferta Crispy Chicken",
-    content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
-    price:"49,99",
-    imageURL:"/images-restaurant/mac/CrispyChicken.png" ,
-  },
-  {
-    key: 8,
-    title:"McOferta Chicken McNuggets",
-    content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
-    price:"49,99",
-    imageURL:"/images-restaurant/mac/Nuggets.png",
-  },
-  {
-    key: 9,
-    title:"Mc Lanche Feliz",
-    content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
-    price:"49,99",
-    imageURL:"/images-restaurant/mac/LancheFelizW.png",   
-  },
-  {
-    key: 10,
-    title:"Mcflurry",
-    content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
-    price:"49,99",
-    imageURL:"/images-restaurant/mac/Mcflurryi.png", 
+    {
+      key: 1,
+      title: "McOferta Big Tasty",
+      content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
+      price:"35,90",
+      imageURL:"/images-restaurant/mac/BigTasty.png",
+    },
+    {
+      key: 2,
+      title:"McOferta Big Mac",
+      content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
+      price:"26,90",
+      imageURL:"/images-restaurant/mac/BigMac.png"
+    }, 
+    {
+      key: 3,
+      title:"McOferta Quarteirão",
+      content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odiolabore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
+      price:"49,99",
+      imageURL:"/images-restaurant/mac/Quarterao.png",
+    },
+    {
+      key: 4,
+      title:"McOferta McChicken",
+      content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
+      price:"49,99",
+      imageURL:"/images-restaurant/mac/McChicken.png",
+    },
+    {
+      key: 5,
+      title:"McOferta Cheddar McMelt",
+      content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odiolabore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
+      price:"49,99",
+      imageURL:"/images-restaurant/mac/McMelt.png",
+    },
+    {
+      key: 6,
+      title:"McOferta McNífico",
+      content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
+      price:"49,99",
+      imageURL:"/images-restaurant/mac/McNifico.png",
+    },
+    {
+      key: 7,
+      title:"McOferta Crispy Chicken",
+      content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
+      price:"49,99",
+      imageURL:"/images-restaurant/mac/CrispyChicken.png" ,
+    },
+    {
+      key: 8,
+      title:"McOferta Chicken McNuggets",
+      content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
+      price:"49,99",
+      imageURL:"/images-restaurant/mac/Nuggets.png",
+    },
+    {
+      key: 9,
+      title:"Mc Lanche Feliz",
+      content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
+      price:"49,99",
+      imageURL:"/images-restaurant/mac/LancheFelizW.png",   
+    },
+    {
+      key: 10,
+      title:"Mcflurry",
+      content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
+      price:"49,99",
+      imageURL:"/images-restaurant/mac/Mcflurryi.png", 
+    }
+  ];
+
+  const restaurante = {
+    title:"Bullguer - Santana",
+    time: "20 - 30 min" ,
+    delivery: "Grátis"
   }
-];
 
-export default function Mac() {
+  return { 
+    props: { 
+      pratos,
+      restaurante,
+    } 
+  };
+};
+
+
+export default function Mac(props: any) {
   const [open, setOpen] = useState(false);
   const [currentDish, setCurrentDish] = useState({});
 
@@ -106,8 +122,8 @@ export default function Mac() {
 
         <div className="flex flex-wrap  justify-center gap-6 mb-10">
           {
-            pratos.length > 0 
-            ? pratos.map((prato) => (
+            props.pratos.length > 0 
+            ? props.pratos.map((prato: any) => (
               <Pratos
                 key={prato.key}
                 prato={prato}
@@ -124,7 +140,12 @@ export default function Mac() {
         </div>
       </div>
 
-      <Modal isOpen={open} setOpen={setOpen} currentDish={currentDish} />
+      <Modal 
+        isOpen={open} 
+        setOpen={setOpen} 
+        currentDish={currentDish} 
+        currentRestaurant={props.restaurante}
+        />
     </div>
   );
 }

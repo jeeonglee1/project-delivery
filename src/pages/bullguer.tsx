@@ -3,7 +3,7 @@ import Banner from "@/components/Restaurante/Banner";
 import SearchFood from "@/components/Restaurante/Busca";
 import Cardapio from "@/components/Restaurante/Cardapio";
 import InfoHeader from "@/components/Restaurante/InfoHeader";
-import Modal from "@/components/Restaurante/ModalRestaurante";
+import ModalRestaurante from "@/components/Restaurante/ModalRestaurante";
 import Pratos, { IPratos } from "@/components/Restaurante/Pratos";
 import { useState } from "react";
 
@@ -13,14 +13,14 @@ export const getServerSideProps = async () => {
       key: 1,
       title: "Bullguer",
       content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
-      price:"35,90",
+      price:"35.90",
       imageURL:"/images-restaurant/bullguer/bullguer.png",
     },
     {
       key: 2,
       title:"Lumberjack",
       content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odio labore laudantium obcaecati tempore asdasdçalskdaçslk açsldk...",
-      price:"26,90",
+      price:"26.90",
       imageURL:"/images-restaurant/bullguer/Lumberjack.png"
     }, 
     {
@@ -141,7 +141,7 @@ export default function Bullguer(props: any) {
         </div>
       </div>
 
-      <Modal 
+      <ModalRestaurante 
         isOpen={open} 
         setOpen={setOpen} 
         currentDish={currentDish} 

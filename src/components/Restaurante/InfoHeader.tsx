@@ -4,7 +4,7 @@ import Image from "next/image"
 interface IProps {
     title: string;
     time: string;
-    delivery: string;
+    delivery: any;
     imageURL: string; 
   }
 

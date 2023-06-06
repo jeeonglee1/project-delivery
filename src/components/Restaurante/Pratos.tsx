@@ -55,4 +55,3 @@ export default function Pratos(props: IPratos) {
   );
 }
 
-//<img  src={imageURL} alt="prato" className="flex justify-center items-end w-[180px] h-[174px]"/> 
