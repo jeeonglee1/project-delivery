@@ -22,13 +22,14 @@ export default function ModalRestaurante({ isOpen, setOpen, currentDish, current
   
   useEffect(
     () => {
-      setModalPrice(currentDish.price);
+      setModalPrice((currentDish.price*quantity).toFixed(2));
+      
     }, 
-    [currentDish.price]
+    [currentDish.price, quantity ]
   );
 
   const handleChangePrice = () => {
-    setModalPrice((modalPrice * quantity).toFixed(2));
+    setModalPrice((currentDish.price * quantity).toFixed(2));
   };
 
   if (isOpen) {

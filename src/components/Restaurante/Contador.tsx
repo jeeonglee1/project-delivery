@@ -8,13 +8,11 @@ interface IContador {
 
 export default function Contador({handleChangePrice, quantity, setQuantity}: IContador) {
   const addCount = () => {
-    const newCount = quantity + 1;
-    setQuantity(newCount);
+    setQuantity(quantity + 1);
   };
   
   const decCount = () => {
-    const newCount = quantity - 1;
-    setQuantity(newCount);
+    setQuantity(quantity - 1);
   };
 
   const handleDecCountChange = () => {
