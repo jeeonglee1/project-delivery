@@ -17,7 +17,7 @@ export default function Pratos(props: IPratos) {
   const {title, content, price, imageURL, prato, setCurrentDish, setOpen } = props;
   
   return (
-    <div className="flex justify-between w-100% "> 
+    <div className="flex justify-between w-100%"> 
       <button 
         className="flex p-4 h-52 w-[640px] gap-4 bg-branco border-solid border border-borda hover:border-cinza transition-0.2s shadow rounded "
         onClick={() => {

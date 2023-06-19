@@ -88,7 +88,7 @@ export default function ModalRestaurante({ isOpen, setOpen, currentDish, current
               
                 <footer className=" absolute bottom-2 right-2 flex items-center h-20 p-5 pr-0 gap-6 mr-8 border-solid border-t-2 border-gray">
                   <Contador handleChangePrice={handleChangePrice} quantity={quantity} setQuantity={setQuantity} />
-                  <Botao priceModal={modalPrice}/>
+                  <Botao label='Adicionar' currency="R$ " priceModal={modalPrice} />
               </footer>
             </div>
           </div>

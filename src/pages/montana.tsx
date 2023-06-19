@@ -101,7 +101,7 @@ export default function Montana() {
         <SearchFood />
       </div>
 
-      <div>
+      <div className="flex flex-col justify-center items-center">
         <Cardapio />
 
         <div className="flex flex-wrap  justify-center gap-6 mb-10">
