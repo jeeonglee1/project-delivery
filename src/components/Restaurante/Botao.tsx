@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 interface IBotao{
     priceModal?: number;
     label: string

@@ -73,19 +73,8 @@ export default function Bag({ bagOpen, setBagOpen }: IBag) {
             )}
           </div>
         </div>
-
-        <div>
-          <button
-            onClick={() => setBagOpen(!bagOpen)}
-            className="absolute top-2 left-2 p-1 "
-          >
-            <X />
-          </button>
-        </div>
-      </div>
-    );
-  } else {
+       </div> 
+  )} else {
     return <></>;
   }
 }
-//< className="flex justify-center items-center w-3/4 h-full bg-vermelho">
