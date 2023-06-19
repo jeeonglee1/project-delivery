@@ -20,6 +20,7 @@ export default function Bag({ bagOpen, setBagOpen }: IBag) {
   if (bagOpen) {
     return (
 <<<<<<< HEAD
+<<<<<<< HEAD
       <div className="absolute right-1 flex justify-end items-end w-[475px] h-screen bg-cinza z-50 mt-20">
         <button
           onClick={() => setBagOpen(!bagOpen)}
@@ -29,6 +30,8 @@ export default function Bag({ bagOpen, setBagOpen }: IBag) {
           TESTE
         </button>
 =======
+=======
+>>>>>>> 710c07bafd44b9fc092bb592853ffcd6632fe790
       <div onClick={handleChangeContent} className="absolute right-0 flex justify-end items-end w-[475px] h-screen bg-branco z-50 mt-20 shadow-lg">
         <div>
           <button
@@ -52,7 +55,10 @@ export default function Bag({ bagOpen, setBagOpen }: IBag) {
               </div>
             </div>
            
+<<<<<<< HEAD
 >>>>>>> 710c07b (addFormatPrice)
+=======
+>>>>>>> 710c07bafd44b9fc092bb592853ffcd6632fe790
       </div>
     );
   } else {
