@@ -24,7 +24,7 @@ export default function ModalRestaurante({ isOpen, setOpen, currentDish, current
     () => {
       setModalPrice((currentDish.price*quantity).toFixed(2));
     }, 
-    [currentDish.price, quantity ]
+    [currentDish.price, quantity]
   );
 
   useEffect(
@@ -87,7 +87,11 @@ export default function ModalRestaurante({ isOpen, setOpen, currentDish, current
                 </div>
               
                 <footer className=" absolute bottom-2 right-2 flex items-center h-20 p-5 pr-0 gap-6 mr-8 border-solid border-t-2 border-gray">
-                  <Contador handleChangePrice={handleChangePrice} quantity={quantity} setQuantity={setQuantity} />
+                  <Contador 
+                    quantity={quantity} 
+                    addCount = {() => setQuantity(quantity + 1)}
+                    decCount = {() => setQuantity(quantity - 1)}
+                  />
                   <Botao label='Adicionar' currency="R$ " priceModal={modalPrice} />
               </footer>
             </div>
