@@ -1,33 +1,17 @@
 import { useState } from 'react';
 
+
 interface IContador {
   quantity: number
-  setQuantity: any
-  handleChangePrice: () => void
+  addCount: any
+  decCount: any
 }
 
-export default function Contador({handleChangePrice, quantity, setQuantity}: IContador) {
-  const addCount = () => {
-    setQuantity(quantity + 1);
-  };
-  
-  const decCount = () => {
-    setQuantity(quantity - 1);
-  };
-
-  const handleDecCountChange = () => {
-    decCount();
-    handleChangePrice();
-  };
-
-  const handleAddCountChange = () => {
-    addCount();
-    handleChangePrice();
-  };
+export default function Contador({addCount, decCount, quantity}: IContador) {
 
   return (
     <div className="flex justify-center items-center w-28 h-12 gap-2 border-solid border-2 border-gray rounded-md">
-      <button disabled={quantity < 2} onClick={handleDecCountChange}>
+      <button disabled={quantity < 2} onClick={decCount}>
         <svg
           className="my-1"
           xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +26,7 @@ export default function Contador({handleChangePrice, quantity, setQuantity}: ICo
       <div className="flex justify-center items-center w-9 h-8 font-medium">
         {quantity}
       </div>
-      <button onClick={handleAddCountChange}>
+      <button onClick={addCount}>
         <svg
           className="my-1"
           xmlns="http://www.w3.org/2000/svg"
