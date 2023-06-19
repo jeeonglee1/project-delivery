@@ -102,3 +102,4 @@ export default function ModalRestaurante({ isOpen, setOpen, currentDish, current
     return <></>;
   }
 }
+
