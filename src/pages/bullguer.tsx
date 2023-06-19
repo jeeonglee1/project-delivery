@@ -100,16 +100,16 @@ export default function Bullguer(props: any) {
   const [currentDish, setCurrentDish] = useState({});
 
   return (
-    <div>
+    <div className="">
       <div>
         <Header />
       </div>
 
-      <div>
+      <div className=" flex flex-col items-center justify-center">
         <Banner 
           imageURL="images-restaurant/bullguer/zyro-image.png"
         />
-        <InfoHeader  
+        <InfoHeader 
          imageURL="images/bullguer.png" 
          title={props.restaurante.title} 
          time={props.restaurante.time} 
@@ -118,10 +118,10 @@ export default function Bullguer(props: any) {
         <SearchFood />
       </div>
 
-      <div>
+      <div className="flex flex-col justify-center items-center">
         <Cardapio />
 
-        <div className="flex flex-wrap  justify-center gap-6 mb-10">
+        <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
         {
           props.pratos.length > 0 
           ? props.pratos.map((prato: any) => (

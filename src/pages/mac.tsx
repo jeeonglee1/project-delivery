@@ -107,7 +107,7 @@ export default function Mac(props: any) {
         <Header />
       </div>
 
-      <div>
+      <div className=" flex flex-col items-center">
         <Banner
           imageURL="images-restaurant/mac/bannerMc.png"
         />
@@ -117,7 +117,7 @@ export default function Mac(props: any) {
         <SearchFood />
       </div>
 
-      <div>
+      <div className="flex flex-col justify-center items-center">
         <Cardapio />
 
         <div className="flex flex-wrap  justify-center gap-6 mb-10">

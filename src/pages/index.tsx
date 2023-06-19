@@ -16,7 +16,7 @@ export default function Home() {
       <header>
         <Header />
       </header>
-      <main>
+      <main className="flex flex-col justify-center items-center">
         
         <HomeImages />
         <ListaPratos />

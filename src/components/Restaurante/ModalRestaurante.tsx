@@ -27,9 +27,23 @@ export default function ModalRestaurante({ isOpen, setOpen, currentDish, current
     [currentDish.price, quantity]
   );
 
+<<<<<<<<< Temporary merge branch 1
+  useEffect(
+    () => {
+      setQuantity (1)
+    },
+   [isOpen]
+  );
+
+  const handleChangePrice = () => {
+    setModalPrice((currentDish.price * quantity).toFixed(2));
+  };
+=========
   // const handleChangePrice = () => {
   //   setModalPrice((currentDish.price * quantity).toFixed(2));
   // };
+>>>>>>>>> Temporary merge branch 2
+
 
   if (isOpen) {
     return (
@@ -84,7 +98,7 @@ export default function ModalRestaurante({ isOpen, setOpen, currentDish, current
                     addCount = {() => setQuantity(quantity + 1)}
                     decCount = {() => setQuantity(quantity - 1)}
                   />
-                  <Botao priceModal={modalPrice}/>
+                  <Botao label='Adicionar' currency="R$ " priceModal={modalPrice} />
               </footer>
             </div>
           </div>
