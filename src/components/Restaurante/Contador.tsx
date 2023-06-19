@@ -5,12 +5,13 @@ interface IContador {
   quantity: number
   addCount: any
   decCount: any
+  small?: boolean
 }
 
-export default function Contador({addCount, decCount, quantity}: IContador) {
+export default function Contador({addCount, decCount, quantity, small}: IContador) {
 
   return (
-    <div className="flex justify-center items-center w-28 h-12 gap-2 border-solid border-2 border-gray rounded-md">
+    <div className={`flex justify-center items-center ${small ? 'h-10' : 'h-12' } ${small ? 'w-18' : 'w-28' } ${small ? 'p-2' : 'p-0'} gap-2 border-solid border-2 border-gray rounded-md`}>
       <button disabled={quantity < 2} onClick={decCount}>
         <svg
           className="my-1"
