@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Botao from "./Botao";
 import Contador from "./Contador";
 import X from "./X";
+import { useBagProvider } from "@/providers/BagContext/Provider";
 
 interface IModal {
    isOpen: boolean;
@@ -19,7 +20,8 @@ const handleAddToCart = () => {
 export default function ModalRestaurante({ isOpen, setOpen, currentDish, currentRestaurant }: IModal) {
   const [modalPrice, setModalPrice] = useState(currentDish.price);
   const [quantity, setQuantity] = useState<number>(1);
-  
+  const { addProduct } = useBagProvider();
+
   useEffect(
     () => {
       setModalPrice((currentDish.price*quantity).toFixed(2));
@@ -37,7 +39,7 @@ export default function ModalRestaurante({ isOpen, setOpen, currentDish, current
   const handleChangePrice = () => {
     setModalPrice((currentDish.price * quantity).toFixed(2));
   };
-
+  
 
   if (isOpen) {
     return (
@@ -92,11 +94,12 @@ export default function ModalRestaurante({ isOpen, setOpen, currentDish, current
                     addCount = {() => setQuantity(quantity + 1)}
                     decCount = {() => setQuantity(quantity - 1)}
                   />
-                  <Botao label='Adicionar' currency="R$ " priceModal={modalPrice} />
+                  <Botao label='Adicionar' currency="R$ " priceModal={modalPrice} addProduct={() => addProduct(currentDish, currentRestaurant) }/>
+          
               </footer>
             </div>
           </div>
-
+            
           <button
             onClick={() => setOpen(!isOpen)}
             className="absolute top-2 right-2 p-1 "

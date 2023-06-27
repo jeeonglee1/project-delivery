@@ -4,7 +4,7 @@ import Search from "./Header-icons/Search";
 import Logo from "./Logo";
 import CartLogo from "./Header-icons/CartLogo";
 import { useState } from "react";
-import Bag from "../Bag";
+import Bag from "../Bag/Bag";
 
 export default function HeaderItems() {
 

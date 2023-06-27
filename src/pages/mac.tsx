@@ -112,7 +112,7 @@ export default function Mac(props: any) {
           imageURL="images-restaurant/mac/bannerMc.png"
         />
         <InfoHeader  
-          imageURL="images/mc.png" title="Mcdonald's - Av. Paulista" time="30 -40 min" delivery="R$ 10,99" 
+          imageURL="images/mc.png" title="Mcdonald's - Av. Paulista" time="30 - 40 min" delivery="R$ 10,99" 
         />
         <SearchFood />
       </div>

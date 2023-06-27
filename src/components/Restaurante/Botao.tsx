@@ -3,6 +3,7 @@ interface IBotao{
     label: string
     currency?: string;
     bigger?: boolean;
+    addProduct?: () => void;
 }
 
 export default function Botao({priceModal, label, currency, bigger}: IBotao) {

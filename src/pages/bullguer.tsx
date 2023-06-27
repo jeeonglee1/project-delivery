@@ -8,7 +8,7 @@ import Pratos, { IPratos } from "@/components/Restaurante/Pratos";
 import { useState } from "react";
 
 export const getServerSideProps = async () => {
-  const pratos: IPratos[]= [
+  const pratos: IPratos[] = [
     {
       key: 1,
       title: "Bullguer",
